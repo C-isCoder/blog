@@ -1,0 +1,1109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Android 开发手册 - Xiaodan.C</title>
+<meta name="description" content="Android dev">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <meta name="generator" content="Hugo 0.57.2" />
+  <meta itemprop="name" content="Android 开发手册">
+<meta itemprop="description" content="Android dev">
+
+
+<meta itemprop="datePublished" content="2019-08-20T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-08-20T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1074">
+
+
+
+<meta itemprop="keywords" content="" />
+
+  <meta property="og:title" content="Android 开发手册" />
+<meta property="og:description" content="Android dev" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://congxiaodan.cn/blog/android-dev-doc/" />
+<meta property="article:published_time" content="2019-08-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-08-20T00:00:00+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Android 开发手册"/>
+<meta name="twitter:description" content="Android dev"/>
+<meta name="twitter:site" content="@Cid_isCoder"/>
+
+  
+
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css">
+  
+    
+      <link rel="stylesheet" href="/css/normalize.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+      
+      
+      <link rel="stylesheet" href="/css/main.min.e25bd28619877b6db95b4bb0d84aada96f31ca55d4e0ac23b576470df37a8f85.css" integrity="sha256-4lvShhmHe225W0uw2EqtqW8xylXU4KwjtXZHDfN6j4U=">
+      <link rel="stylesheet" href="/css/add-on.css">
+    
+  
+  
+  
+  
+  
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/">
+        
+          
+            Blog
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        <a href="/" class="link"><i class="fas fa-home">&nbsp;</i>Home</a>
+      
+        <a href="/about/" class="link"><i class="far fa-id-card">&nbsp;</i>About</a>
+      
+        <a href="/blog/" class="link"><i class="far fa-newspaper">&nbsp;</i>Blog</a>
+      
+        <a href="/categories/" class="link"><i class="fas fa-sitemap">&nbsp;</i>Categories</a>
+      
+        <a href="/contact/" class="link"><i class="far fa-envelope">&nbsp;</i>Contact</a>
+      
+      
+      
+
+    </menu>
+    
+
+    
+    
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro">
+  <a href="/"><img src="/img/main/logo.jpg" class="circle" width="" alt="Hugo Future Imperfect Slim" /></a>
+  <header>
+    <h1>Xiaodan.Cong</h1>
+  </header>
+  <main>
+    <p>🤔Xiaodn.©️™️ 🏡⛅️</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/C-isCoder" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//facebook.com/cong.xiaodan" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/Return_Null" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=1502219221&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+<li><a href="//instagram.com/xiaodan.cong" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/Cid_isCoder" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:Xiaodan.Cong@qq.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+  <header>
+  <div class="title">
+    
+        <h2><a href="/blog/android-dev-doc/">Android 开发手册</a></h2>
+    
+    
+        <p>Android dev</p>
+    
+</div>
+  <div class="meta">
+    <time class="published" datetime="2019-08-20 00:00:00 &#43;0000 UTC">
+      August 20, 2019
+    </time>
+    <span class="author">Xiaodan.C</span>
+    
+        <p>6 minute read</p>
+    
+  </div>
+</header>
+
+  <section id="socnet-share">
+    
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Android%20%e5%bc%80%e5%8f%91%e6%89%8b%e5%86%8c&amp;url=https%3a%2f%2fcongxiaodan.cn%2fblog%2fandroid-dev-doc%2f" target="_blank" rel="noopener" class="share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcongxiaodan.cn%2fblog%2fandroid-dev-doc%2f" target="_blank" rel="noopener" class="share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check out this post by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fcongxiaodan.cn%2fblog%2fandroid-dev-doc%2f" target="_blank" class="share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+<a href="/blog/android-dev-doc/" class="image featured">
+  <img src="/img/2019/08/pic01.jpg" alt="Pic 1">
+</a>
+
+
+  <div class="content">
+    
+
+<h2 id="工程">工程</h2>
+
+<h3 id="结构">结构</h3>
+
+<ul>
+<li>整体项目0依赖 model ，单一模块工程</li>
+</ul>
+
+<p><img src="/img/2019/07/1.png" alt="" />
+<img src="/img/2019/07/2.png" alt="" /></p>
+
+<ol>
+<li>包划分：按照项目功能模块划分，模块下根据功能的多少，考虑是否细分包。</li>
+<li>配置文件，由之前的单一 Gradle 文件，拆分为 <strong>thrid.gradle</strong>（第三方依赖）、<strong>thrid-key.gradle</strong>（第三方依赖的key）、<strong>version.gradle</strong>（项目管理）。<strong>Jenkinsfile</strong>（CI流程文件）</li>
+</ol>
+
+<h3 id="架构组织-mvp">架构组织（MVP）</h3>
+
+<ul>
+<li>每个页面由3个文件 xxxActivity\Fragment，xxxContract，xxxPresenter</li>
+</ul>
+
+<p><img src="/img/2019/07/3.png" alt="" /></p>
+
+<h2 id="规范">规范</h2>
+
+<h3 id="包命名">包命名</h3>
+
+<ul>
+<li>功能名，对应的::英文单词，全小写::</li>
+<li>eg：<code>com.baichang.consumer.active</code></li>
+</ul>
+
+<h3 id="activity-fragment-service-类名">Activity、Fragment、Service、类名</h3>
+
+<ul>
+<li>功能名，对应的::英文单词，首字母大写+Activity\Fragment\Service::</li>
+<li>eg：<code>MessageActivity、MessageFragment、MessageService</code></li>
+</ul>
+
+<h3 id="xml资源文件">XML资源文件</h3>
+
+<h4 id="颜色">颜色</h4>
+
+<ul>
+<li>::类型_名称+色值后两位(大写)::</li>
+<li>eg：<code>font_color_blackBD</code>  -&gt; <code>#FFBDBDBD</code></li>
+</ul>
+
+<h4 id="文字">文字</h4>
+
+<ol>
+<li>普通提示类型的文字描述：::tips_英文描述::</li>
+</ol>
+
+<p>eg：<code>tips_please_input_name</code> -&gt; <code>请输入您的名字</code></p>
+
+<pre><code class="language-xml">&lt;string name=&quot;tips_please_input_name&quot;&gt;请输入您的名字&lt;/string&gt;
+</code></pre>
+
+<ol>
+<li>成功/失败类型的文字描述： ::tips_英文描述_success\failed::</li>
+</ol>
+
+<p>eg：<code>tips_submit_success</code> -&gt; <code>提交成功</code></p>
+
+<pre><code class="language-xml">&lt;string name=&quot;tips_submit_success&quot;&gt;提交成功&lt;/string&gt;
+&lt;string name=&quot;tips_submit_failed&quot;&gt;提交失败&lt;/string&gt;
+</code></pre>
+
+<ol>
+<li>带有格式化类型的文字描述：::format_英文描述::</li>
+</ol>
+
+<p>eg：<code>format_card_invalid</code> -&gt; <code>失效日期：%s</code></p>
+
+<pre><code class="language-xml">&lt;string name=&quot;format_card_invalid&quot;&gt;失效日期：%s&lt;/string&gt;
+</code></pre>
+
+<ol>
+<li>普通类型的文字描述：::英文单词_英文单词::</li>
+</ol>
+
+<p>eg：<code>collar_center</code> -&gt; <code>领券中心</code></p>
+
+<pre><code class="language-xml">&lt;string name=&quot;collar_center&quot;&gt;领券中心&lt;/string&gt;
+</code></pre>
+
+<h4 id="androidmainfest-xml">AndroidMainfest.xml</h4>
+
+<ul>
+<li><p>所有的 Activity、Service 必须注释中文模块名</p>
+
+<pre><code class="language-xml">/&lt;!-- 意见反馈 --&gt;/
+&lt;activity android:name=&quot;.mine.feedback.FeedbackActivity&quot;/&gt;
+/&lt;!-- 服务协议 --&gt;/
+&lt;activity android:name=&quot;.login.ServiceProtocolActivity&quot;/&gt;
+/&lt;!-- 活动中心 --&gt;/
+&lt;activity android:name=&quot;.active.ActiveActivity&quot;/&gt;
+/&lt;!-- 省市区数据服务 --&gt;/
+&lt;service
+android:name=&quot;.service.ChinaTownIntentService&quot;
+android:exported=&quot;false&quot;&gt;
+</code></pre></li>
+</ul>
+
+<h4 id="布局文件">布局文件</h4>
+
+<ul>
+<li>Activity\Fragment 布局文件 ::Activity\Fragment_模块\功能英文名全小写::</li>
+</ul>
+
+<p>eg：<code>activity\fragment_message</code></p>
+
+<ul>
+<li>ListItem布局文件::item_模块\功能英文名全小写::
+<br /></li>
+</ul>
+
+<p>eg：<code>item_message</code></p>
+
+<ul>
+<li>引入布局文件::include_模块\功能英文名全小写::
+<br /></li>
+</ul>
+
+<p>eg：<code>include_message_header</code></p>
+
+<ul>
+<li>Dialog布局文件::dialog_模块\功能英文名全小写::
+<br /></li>
+</ul>
+
+<p>eg：<code>dialog_message</code></p>
+
+<ul>
+<li>PopupWindow布局文件::pop_模块\功能英文名全小写::
+<br /></li>
+</ul>
+
+<p>eg：<code>pop_message</code></p>
+
+<h4 id="drawable资源文件">Drawable资源文件</h4>
+
+<blockquote>
+<p><em><strong>颜色、圆角只在有多个相同功能，不同样式的情况下使用</strong></em></p>
+</blockquote>
+
+<ul>
+<li>按钮类型的 drawable ::button_功能\模块英文名全小写_颜色_圆角::</li>
+</ul>
+
+<p>eg：<code>button_back_white_10</code></p>
+
+<ul>
+<li>Shape类型的 drawable ::shape_功能\模块英文名全小写_颜色_圆角::
+<br /></li>
+</ul>
+
+<p>eg：<code>shape_address</code></p>
+
+<ul>
+<li>Selector类型的 drawable ::selector_功能\模块英文名全小写_颜色_圆角::
+<br /></li>
+</ul>
+
+<p>eg：<code>selector_address</code></p>
+
+<ul>
+<li>其他的类型以控件名字为前缀，例如 <strong>checkbox</strong>、<strong>radio</strong></li>
+</ul>
+
+<p>eg：<code>radio_sex_man checkbox_eye</code></p>
+
+<ul>
+<li>项目首页下边4个Tab按钮单独命名为::tab_模块英文名小写::</li>
+</ul>
+
+<p>eg：<code>tab_home</code></p>
+
+<h3 id="代码">代码</h3>
+
+<h4 id="常量-变量命名">常量、变量命名</h4>
+
+<blockquote>
+<p><em><strong>优先 val 常量命名，除非要求可变，才会用 var</strong></em></p>
+</blockquote>
+
+<ol>
+<li>全局变量名，关键字::<strong>var</strong>::，遵循::驼峰命名::规则，尽量简洁明了，不超过2个单词。</li>
+</ol>
+
+<p>eg：<code>private var nowPage = 1</code></p>
+
+<ol>
+<li>全局常量名，关键字::<strong>val</strong>::，遵循::驼峰命名::规则，尽量简洁明了，不超过2个单词。</li>
+</ol>
+
+<p>eg：<code>private val preferences = view.getPreferences()</code></p>
+
+<ol>
+<li>局部变量，尽可能使用::<strong>val</strong>::，遵循::驼峰命名::规则，尽量简洁明了。不超过2个单词。</li>
+</ol>
+
+<p>eg：<code>val phone = view.getNumber()</code></p>
+
+<ol>
+<li><p>静态全局常量，kotlin 中，需要在半生对象中声明静态全局常量，::大写英文字母_链接::</p>
+
+<pre><code class="language-java">companion object {
+const val REFRESH_CODE = 10010
+}
+</code></pre></li>
+</ol>
+
+<p>访问：<code>类名.REFRESH_CODE</code></p>
+
+<ol>
+<li>Bool类型声明，关键字::is、has、can+英文::，遵循::驼峰命名::规则，尽量简洁明了，不超过2个单词。
+<br /></li>
+</ol>
+
+<p>eg：<code>var isRefresh = true、var hasCallPermission = true、var canClose = false</code></p>
+
+<h4 id="控件的命名">控件的命名</h4>
+
+<blockquote>
+<p><em><strong>同一个布局文件中，名称唯一</strong></em></p>
+</blockquote>
+
+<ol>
+<li>常用控件，遵循::驼峰命名，简称+功能::规则，尽量简洁，不超过2个单词。（对于刷新控件统一命名为<code>progress</code>）</li>
+</ol>
+
+<p>eg：<code>tvName,ivAvatar,llPhone,rlLayout,rvList,cbSex,rbMan,btnSubmit</code></p>
+
+<ol>
+<li>特殊命名，在 RelativeLayout 布局中，仅仅作为布局的相对位置描述的命名（不参与代码的逻辑），采用::_单词::的方式，长度为1个英文单词。</li>
+</ol>
+
+<p>eg：<code>_title,_card</code></p>
+
+<h4 id="类-方法命名">类、方法命名</h4>
+
+<ul>
+<li><p>遵循::驼峰命名，动词+名字\形容词::规则，类名::首字母大写::，尽量简洁的表达出，方法\类的功能\作用，不超过3个单子。</p>
+
+<pre><code class="language-coffee">fun showMessage(msg: String)
+fun showMessage(msgId: Int)
+fun showProgress()
+fun hideProgress()
+fun setIngots(number: String)
+fun setAnnouncement(list: List&lt;String&gt;)
+fun getPreferences(): SharedPreferences
+fun startProgress(data: ActiveData)
+fun setEmptyStatus(isShow: Boolean)
+</code></pre></li>
+
+<li><p>方法参数遵循::驼峰命名，动词+名字\形容词::规则，尽可能简洁，不超过2个单词。</p></li>
+
+<li><p>方法、跳转避免对象的传递。</p></li>
+
+<li><p>接口 Api 命名遵循::驼峰命名，动词+名字\形容词::规则，每个接口上方必须注释接口中文名称，尽量简洁。</p>
+
+<pre><code class="language-java">// 检查更新
+@POST(&quot;app/checkEdition&quot;)
+fun upgrade(@Body map: Map&lt;String, String&gt;): Observable&lt;UpgradeData&gt;
+
+// 获取验证码
+@POST(&quot;app/sendCode&quot;)
+fun getCode(@Body map: Map&lt;String, String&gt;): Observable&lt;Boolean&gt;
+
+// 验证码校验
+@POST(&quot;app/checkPerfect&quot;)
+fun checkCode(@Body map: Map&lt;String, String&gt;): Observable&lt;Int&gt;
+
+// 登录
+@POST(&quot;app/loginDirect&quot;)
+fun login(@Body map: Map&lt;String, String&gt;): Observable&lt;LoginData&gt;
+</code></pre></li>
+</ul>
+
+<h4 id="代码书写">代码书写</h4>
+
+<ol>
+<li>方法名称，尽可能的表现出方法本身的作用，传参个数不超过3个，如果超出，拆分多个方法实现。</li>
+<li>尽可能保证代码一行展示，有利于阅读。
+<img src="/img/2019/07/4.png" alt="" /></li>
+<li>方法中 if else 嵌套不超过3层，try 捕获的情况不超过4层。</li>
+<li>Activity/Fragment中，除了在 onCreate 方法中初始化布局以外，不得出现非 override 修饰的方法出现，广播接收的回调例外。</li>
+
+<li><p>本地缓存、页面跳转，存储的 Key 集中存放，命名遵循静态全局常量。</p>
+
+<pre><code class="language-java">// 缓存
+object Cache {
+const val USER_AVATAR = &quot;user_avatar&quot;
+const val USER_NAME = &quot;user_name&quot;
+const val USER_SEX = &quot;user_sex&quot;
+const val USER_ID = &quot;user_id&quot;
+}
+//  传值/广播
+object Constants {
+const val INTENT_MESSAGE_DATA = &quot;intent_message_data&quot;
+const val INTENT_QR_CODE_RESULT = &quot;intent_qr_code_result&quot;
+const val INTENT_BRANDS_ID = &quot;intent_position&quot; 
+const val BROADCAST_PUSH_MESSAGE = &quot;push_message&quot;
+const val BROADCAST_REFRESH_MONEY = &quot;broadcast_money&quot;
+const val BROADCAST_UPDATE_MONEY = &quot;broadcast_update_money&quot;
+const val BROADCAST_WX_SUCCESS = &quot;broadcast_wx_success&quot;
+}
+</code></pre></li>
+
+<li><p>事件通知，避免使用 EventBus 实现，改用原生的本地广播。</p></li>
+
+<li><p>网络请求成功回调后对控件的操作，要考虑到页面销毁的情况，对用到的控件用::?::实行空安全。</p>
+
+<pre><code class="language-coffee">override fun showProgress() {
+refresh?.show()
+}
+
+override fun hideProgress() {
+refresh?.hide()
+}
+</code></pre></li>
+
+<li><p>第三方依赖做好版本管理</p>
+
+<pre><code class="language-java">ext {
+retrofit_version = *'2.3.0'*
+converter_gson_version = *'2.3.0'*
+adapter_rxjava2_version = *'2.3.0'*
+rxandroid_version = *'2.0.1'*
+constraint_layout_version = *'1.1.0'*
+support_version = *'27.1.1'*
+circleimageview_version = *'2.2.0'*
+swipedelmenulayout_version = *'V1.3.0'*
+glide_version = *'4.4.0'*
+anko_version = *'0.10.4'*
+gradle_version = *'3.0.1'*
+bga_qrcode_zxing_version = *'1.2.1'*
+jpush_version = *'3.1.1'*
+jcore_version = *'1.1.9'*
+janalytics_version = *'1.1.1'*
+mpchart_version = *'v3.0.3'*
+datetimepicker_version = *'2.0.0'*
+ktx_version = *'0.3'*
+gallery_pager_version = *'0.0.5'*
+wechat_sdk_version = *'5.1.4'*
+marquee_view = *'1.3.3'*
+}
+dependencies {
+implementation fileTree(*include*: [*'*.jar'*], *dir*: *'libs'*)
+implementation *&quot;androidx.core:core-ktx:*$ktx_version*&quot;*
+implementation *&quot;com.android.support:design:*$support_version*&quot;*
+implementation *&quot;com.android.support:support-v4:*$support_version*&quot;*
+implementation *'com.android.support:support-v4:27.1.1'*
+implementation *&quot;com.android.support:appcompat-v7:*$support_version*&quot;*
+implementation *&quot;com.android.support:support-vector-drawable:*$support_version*&quot;*
+implementation *&quot;com.squareup.retrofit2:retrofit:*$retrofit_version*&quot;*
+implementation *&quot;com.squareup.retrofit2:converter-gson:*$converter_gson_version*&quot;*
+implementation *&quot;com.squareup.retrofit2:adapter-rxjava2:*$adapter_rxjava2_version*&quot;*
+implementation *&quot;io.reactivex.rxjava2:rxandroid:*$rxandroid_version*&quot;*
+implementation *&quot;de.hdodenhof:circleimageview:*$circleimageview_version*&quot;*
+implementation *&quot;com.android.support:cardview-v7:*$support_version*&quot;*
+implementation *&quot;com.android.support.constraint:constraint-layout:*$constraint_layout_version*&quot;*
+implementation *&quot;org.jetbrains.anko:anko:*$anko_version*&quot;*
+implementation *&quot;cn.jiguang.sdk:jcore:*$jcore_version*&quot;*
+implementation *&quot;cn.jiguang.sdk:jpush:*$jpush_version*&quot;*
+implementation *&quot;cn.jiguang.sdk:janalytics:*$janalytics_version*&quot;*
+implementation(*&quot;com.github.bumptech.glide:glide:*$glide_version*&quot;*) {
+exclude *group*: *&quot;com.android.support&quot;*
+}
+implementation *&quot;cn.bingoogolapple:bga-qrcode-zxing:*$bga_qrcode_zxing_version*&quot;*
+implementation *&quot;com.github.RainbleNi:GalleryViewPager:*$gallery_pager_version*&quot;*
+implementation *&quot;com.tencent.mm.opensdk:wechat-sdk-android-without-mta:*$wechat_sdk_version*&quot;*
+implementation *&quot;com.sunfusheng:marqueeview:*$marquee_view*&quot;*
+}
+</code></pre></li>
+
+<li><p>项目中不能出现硬编码，所有文字相关的要写到，strings.xml文件中。</p></li>
+
+<li><p>接口方法中，有未实现的方法要注释  <code>//ignore</code>  进行忽略。</p></li>
+
+<li><p>接口返回的数据对象中有类似于 type 值对应不同状态的，必须对字段进行注释。</p>
+
+<pre><code class="language-java">data class ActiveData(
+var activeDegree: Int,      //用户参与活动限制次数
+var activeStartTime: String,//开始时间
+var activeStatus: Int,      //活动状态 0未开始 1倒计时 2进行中 3结束 ,
+val id: Int,                //id
+var needMoney: Int,         //需要的money
+var percent: Int,           //剩余百分比
+var prizeName: String,      //奖品的名称
+var prizePicture: String,   //奖品的图片key
+var remainder: Int,         //倒计时毫秒数
+var remark: String,         //备注
+var remarkNote: String      //活动描述
+)
+</code></pre></li>
+</ol>
+
+<h2 id="mvp事例">MVP事例</h2>
+
+<blockquote>
+<p>Activity</p>
+</blockquote>
+
+<ul>
+<li><p>onCreated 中初始化控件</p>
+
+<pre><code class="language-java">class InviteActivity : CommonActivity(), InviteContract.View {
+
+override lateinit var presenter: InviteContract.Presenter
+
+override fun onCreate(savedInstanceState: Bundle?) {
+super.onCreate(savedInstanceState)
+setContentView(R.layout.activity_invite_code)
+InvitePresenter(this)
+btnShare.onClick { presenter.share() }
+iInvite.onClick { presenter.share() }
+tvCode.onClick { presenter.copy() }
+tvCode.onLongClick { presenter.copy() }
+JAnalyticsInterface.onPageStart(this, getString(R.string.j_invite))
+}
+
+override fun getClipboard(): ClipboardManager =
+  getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+
+override fun onStart() {
+super.onStart()
+presenter.start()
+}
+
+override fun showProgress() {
+progress?.show()
+}
+
+override fun hideProgress() {
+progress?.hide()
+}
+
+override fun showMessage(msg: String) {
+toast(msg)
+}
+
+override fun showMessage(msgRes: Int) {
+toast(msgRes)
+}
+
+override fun setCode(code: String) {
+tvCode?.text = code
+}
+
+override fun setQrCode(qr: Bitmap) {
+ivQrCode.setImageBitmap(qr)
+}
+
+override fun getQrContent(): String =
+  defaultSharedPreferences.getString(Cache.USER_ADDRESS_ID, &quot;&quot;)
+
+override fun dip(dp: Int): Int = getActivity().dip(dp)
+
+override fun getUserId(): String = defaultSharedPreferences.getString(Cache.USER_ID, &quot;&quot;)
+
+override fun getContext(): Context = this
+
+override fun getManager(): FragmentManager = supportFragmentManager
+
+override fun onDestroy() {
+super.onDestroy()
+JAnalyticsInterface.onPageEnd(this, getString(R.string.j_invite))
+}
+}
+</code></pre></li>
+</ul>
+
+<blockquote>
+<p>Contract</p>
+</blockquote>
+
+<ul>
+<li><p>契约接口，约束Activity和Present交互规则</p>
+
+<pre><code class="language-java">interface InviteContract {
+interface View : CommonView&lt;Presenter&gt; {
+fun showProgress()
+fun hideProgress()
+fun showMessage(msg: String)
+fun showMessage(msgRes: Int)
+fun setCode(code: String)
+fun getResources(): Resources
+fun getContext(): Context
+fun dip(dp: Int): Int
+fun getQrContent(): String
+fun setQrCode(qr: Bitmap)
+fun getUserId(): String
+fun getManager(): FragmentManager
+fun getClipboard():ClipboardManager
+}
+
+interface Presenter : CommonPresenter {
+fun share()
+fun copy()
+}
+}
+</code></pre></li>
+</ul>
+
+<blockquote>
+<p>Presenter</p>
+</blockquote>
+
+<ul>
+<li><p>执行网络请求，耗时操作的地方::Persenter 中不能出现任何控件::</p>
+
+<pre><code class="language-java">class InvitePresenter(private val view: InviteContract.View) : InviteContract.Presenter {
+
+private var miniTitle: String? = null
+private var webTitle: String? = null
+private var description: String? = null
+private var miniId: String? = null
+private var webPageUrl: String? = null
+private var path: String? = null
+private var content: String? = null
+private var webUrl: String? = null
+private var inviteCode: String? = null
+
+init {
+view.presenter = this
+}
+
+override fun start() {
+HttpFactory.getInstance()
+    .getInviteCode()
+    .subscribeOn(Schedulers.newThread())
+    .map {
+      it.qrCode = QRCodeEncoder.syncEncodeQRCode(it.downloadLink, view.dip(130))
+      return@map it
+    }
+    .observeOn(AndroidSchedulers.mainThread())
+    .doOnSubscribe { view.showProgress() }
+    .doOnTerminate { view.hideProgress() }
+    .subscribe({ invite -&gt;
+      content = invite.shareContent
+      inviteCode = invite.userCode
+      view.setCode(invite.userCode)
+      view.setQrCode(invite.qrCode)
+    }, { view.showMessage(it.message!!) })
+HttpFactory.getInstance()
+    .miniProgram()
+    .compose(HttpFactory.schedulers())
+    .subscribe({
+      miniTitle = it.title
+      description = it.description
+      miniId = it.miniId
+      webPageUrl = it.webpageUrl
+      path = it.path
+    }, { view.showMessage(it.message!!) })
+HttpFactory.getInstance()
+    .webProgram()
+    .compose(HttpFactory.schedulers())
+    .subscribe({
+      webTitle = it.title
+      webUrl = it.pageUrl
+    }, { view.showMessage(it.message!!) })
+}
+
+private val THUMB_WIDTH = 400
+private val THUMB_HEIGHT = 320
+private val THUMB_WEB = 200
+
+override fun share() {
+ShareUtil.show(view.getContext()) { type -&gt;
+  val api = WXAPIFactory.createWXAPI(view.getContext(), Constants.WX_APP_ID)
+  when (type) {
+    ShareUtil.WECHAT -&gt; {
+      val miniProgramObj = WXMiniProgramObject()
+      webPageUrl?.let {
+        miniProgramObj.webpageUrl = it
+      }                                  // 兼容低版本的网页链接
+      miniProgramObj.miniprogramType =
+          WXMiniProgramObject.MINIPTOGRAM_TYPE_RELEASE       // 正式版:0，测试版:1，体验版:2
+      miniId?.let {
+        miniProgramObj.userName = it
+      }                                        // 小程序原始id
+      path?.let {
+        miniProgramObj.path = it
+      }                                              //小程序页面路径
+      val msg = WXMediaMessage(miniProgramObj)
+      miniTitle?.let {
+        msg.title = it
+      }                                                   // 小程序消息title
+      description?.let {
+        msg.description = it
+      }                                           // 小程序消息desc
+      val bmp = BitmapFactory.decodeResource(view.getResources(), R.mipmap.mini_card)
+      val thumbBmp = Bitmap.createScaledBitmap(bmp, THUMB_WIDTH, THUMB_HEIGHT, true)
+      bmp.recycle()
+      msg.thumbData = Util.bmpToByteArray(thumbBmp, true)
+      val req = SendMessageToWX.Req()
+      req.transaction = &quot;webpage${System.currentTimeMillis()}&quot;
+      req.message = msg
+      req.scene =
+          SendMessageToWX.Req.WXSceneSession                                        // 目前支持会话
+      api.sendReq(req)
+    }
+    ShareUtil.CIRCLE -&gt; {
+      val webPageObj = WXWebpageObject()
+      webUrl?.let { webPageObj.webpageUrl = it }
+      val msg = WXMediaMessage(webPageObj)
+      webTitle?.let { msg.title = it }
+      msg.description = view.getResources()
+          .getString(R.string.app_name)
+      val bmp = BitmapFactory.decodeResource(view.getResources(), R.mipmap.icon_web)
+      val thumbBmp = Bitmap.createScaledBitmap(bmp, THUMB_WEB, THUMB_WEB, true)
+      bmp.recycle()
+      msg.thumbData = Util.bmpToByteArray(thumbBmp, true)
+      val req = SendMessageToWX.Req()
+      req.transaction = &quot;webpage${System.currentTimeMillis()}&quot;
+      req.message = msg
+      req.scene = SendMessageToWX.Req.WXSceneTimeline
+      api.sendReq(req)
+    }
+  }
+}
+}
+
+override fun copy() {
+inviteCode?.let {
+  val clipboardManager = view.getClipboard()
+  val appName = view.getResources()
+      .getString(R.string.app_name)
+  val clipData = ClipData.newPlainText(appName, inviteCode)
+  clipboardManager.primaryClip = clipData
+  view.showMessage(R.string.tips_invite_clip)
+}
+}
+
+}
+</code></pre></li>
+</ul>
+
+<hr />
+
+<p>EOF</p>
+
+  </div>
+  <footer>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://congxiaodan.cn/categories/android">Android</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    <li class="tags">
+      <ul>
+        <li>None</li>
+      </ul>
+    </li>
+  
+</ul>
+
+  </footer>
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Xiaodan.C" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+
+
+<div class="pagination">
+  
+    <a href="/blog/android-studio-key/" class="button big previous"><i class="fas fa-angle-left"></i> AndroidStudio 快捷键</a>
+  
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+<a href="/blog/android-dev-doc/" class="image featured">
+  <img src="/img/2019/08/pic01.jpg" alt="Pic 1">
+</a>
+
+
+        </section>
+        <header>
+          <h1><a href="/blog/android-dev-doc/">Android 开发手册</a></h1>
+          <time class="published" datetime="">August 20, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/blog/android-studio-key/">AndroidStudio 快捷键</a></h1>
+          <time class="published" datetime="">August 20, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/blog/examples/">Markdown 语法</a></h1>
+          <time class="published" datetime="">August 20, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+<a href="/blog/orc-api-doc/" class="image featured">
+  <img src="/img/2019/08/pic02.jpg" alt="Pic 2">
+</a>
+
+
+        </section>
+        <header>
+          <h1><a href="/blog/orc-api-doc/">医邦人证件识别接口说明文档</a></h1>
+          <time class="published" datetime="">August 20, 2019</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+<a href="/blog/mobile-tech/" class="image featured">
+  <img src="/img/2019/08/pic03.jpg" alt="Pic 3">
+</a>
+
+
+        </section>
+        <header>
+          <h1><a href="/blog/mobile-tech/">手机端开发方案</a></h1>
+          <time class="published" datetime="">August 20, 2019</time>
+        </header>
+      </article>
+      
+      
+        <a href="/blog/" class="button">See more</a>
+      
+    </section>
+  
+
+  
+
+  <section id="mini-bio">
+    <header>
+      <h1>About</h1>
+    </header>
+    <p>...</p>
+    <footer>
+      <a href="/about" class="button">Learn More</a>
+    </footer>
+  </section>
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/C-isCoder" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//facebook.com/cong.xiaodan" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+
+
+
+
+
+
+<li><a href="weixin://contacts/profile/Return_Null" target="_blank" rel="noopener" title="WeChat" class="fab fa-weixin"></a></li>
+<li><a href="//wpa.qq.com/msgrd?v=3&amp;uin=1502219221&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" title="QQ" class="fab fa-qq"></a></li>
+<li><a href="//instagram.com/xiaodan.cong" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/Cid_isCoder" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:Xiaodan.Cong@qq.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2019
+      
+        Xiaodan.C
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.57.2' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/html.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/css.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/js.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/toml.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/java.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/golang.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/kotlin.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src=/js/util.js></script>
+  <script src=/js/main.js></script>
+  <script src=/js/add-on.js></script>
+  
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'congxiaodan', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    </div>
+  </body>
+</html>

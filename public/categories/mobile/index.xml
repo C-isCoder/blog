@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mobile on Xiaodan.C</title>
+    <link>https://congxiaodan.cn/categories/mobile/</link>
+    <description>Recent content in mobile on Xiaodan.C</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 20 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://congxiaodan.cn/categories/mobile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>手机端开发方案</title>
+      <link>https://congxiaodan.cn/blog/mobile-tech/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://congxiaodan.cn/blog/mobile-tech/</guid>
+      <description>UI  iOS、Android 都采用腾讯 QMUI 团队开源的 QMUI 控件。
+ 补充定制 QMUI 缺失控件，如 分享等。
+  基础组件  开发语言 换成 Kotlin。
+ 使用 Kotlin 分装的 kit 包，其中包含 网络请求、工具类、控件、实用的扩展方法等。
+ MVP 模式开发，高度统一的开发模版。
+ 工具库的完善、丰富。
+ 本地存储 MMKV（微信开源）
+ 日志系统 Logan（美团开源）
+ jetpack
+  开发流程  开发 -&amp;gt; 代码提交 -&amp;gt; 自动构建 -&amp;gt; 通知测试 -&amp;gt; 测试反馈 -&amp;gt; CodeReview
+ 开发 -&amp;gt; 代码提交 -&amp;gt; CodeReview -&amp;gt; 自动构建 -&amp;gt; 通知测试 -&amp;gt; 测试反馈
+  技术栈  未来趋势，Kotlin 原生开发、Flutter 3端开发。</description>
+    </item>
+    
+  </channel>
+</rss>
